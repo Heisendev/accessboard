@@ -1,0 +1,336 @@
+🗂️ Backlog — AccessBoard
+🧩 ÉPIC 0 — Foundations & Setup
+AB-001 — Initialiser le projet
+
+Objectif
+Créer une base saine, prête pour une équipe.
+
+Tâches
+
+Setup Vite + React + TypeScript (strict)
+
+ESLint + Prettier
+
+Alias de paths
+
+Structure initiale des dossiers
+
+Critères d’acceptation
+
+npm run dev fonctionne
+
+Lint + format passent
+
+Aucune config inutile
+
+🎯 Lead angle : expliquer les règles ESLint choisies.
+
+AB-002 — Architecture & conventions
+
+Objectif
+Aligner l’équipe avant d’écrire trop de code.
+
+Tâches
+
+Créer la structure feature-based
+
+Rédiger ARCHITECTURE.md
+
+Définir conventions de nommage
+
+Critères
+
+Un nouveau dev comprend où coder
+
+Pas de dossier “fourre-tout”
+
+🎯 Lead angle : éviter les refactors tardifs.
+
+🧩 ÉPIC 1 — Fake Backend & Data Model
+AB-010 — Modèle de données
+
+Objectif
+Stabiliser les contrats.
+
+Tâches
+
+Définir Action
+
+Définir statuts
+
+Définir erreurs API
+
+Critères
+
+Typage strict
+
+Pas de logique UI ici
+
+🎯 Lead angle : découpler métier / UI.
+
+AB-011 — Fake API
+
+Objectif
+Simuler des conditions réelles.
+
+Tâches
+
+CRUD actions
+
+Latence artificielle
+
+Erreurs aléatoires
+
+Critères
+
+API asynchrone
+
+Comportement déterministe configurable
+
+🎯 Lead angle : préparer le futur backend.
+
+🧩 ÉPIC 2 — Dashboard
+AB-020 — Liste des actions
+
+Objectif
+Afficher la donnée.
+
+Tâches
+
+Fetch via React Query
+
+Loading / error states
+
+Liste accessible
+
+Critères
+
+Skeleton ou feedback visible
+
+Screen reader OK
+
+🎯 Lead angle : server state ≠ UI state.
+
+AB-021 — Filtres
+
+Objectif
+Manipuler de la donnée sans casser la perf.
+
+Tâches
+
+Filtre par statut
+
+Recherche texte
+
+Debounce si nécessaire
+
+Critères
+
+Pas de refetch inutile
+
+UX fluide
+
+🎯 Lead angle : memoisation raisonnée.
+
+🧩 ÉPIC 3 — CRUD Actions
+AB-030 — Création d’une action
+
+Objectif
+Formulaire robuste et accessible.
+
+Tâches
+
+Formulaire contrôlé
+
+Validation
+
+Erreurs accessibles
+
+Critères
+
+Focus sur l’erreur
+
+Keyboard only OK
+
+🎯 Lead angle : accessibilité + UX.
+
+AB-031 — Édition inline
+
+Objectif
+Modifier sans changer de page.
+
+Tâches
+
+Mode lecture / édition
+
+Annuler / sauvegarder
+
+Optimistic update
+
+Critères
+
+UX claire
+
+Rollback possible
+
+🎯 Lead angle : complexité maîtrisée.
+
+AB-032 — Suppression
+
+Objectif
+Action critique, UX maîtrisée.
+
+Tâches
+
+Confirmation accessible
+
+Gestion erreurs
+
+Critères
+
+Pas de suppression accidentelle
+
+🎯 Lead angle : design responsable.
+
+🧩 ÉPIC 4 — Indicateurs & Performance
+AB-040 — Indicateurs
+
+Objectif
+Visualiser l’état global.
+
+Tâches
+
+Calcul dérivé
+
+Pas de refetch
+
+Critères
+
+Données cohérentes
+
+Code lisible
+
+🎯 Lead angle : derived state.
+
+AB-041 — Performance liste
+
+Objectif
+Tenir la charge.
+
+Tâches
+
+Simuler 1 000 actions
+
+Identifier re-renders
+
+Optimiser si nécessaire
+
+Critères
+
+Optimisations justifiées
+
+🎯 Lead angle : performance pragmatique.
+
+🧩 ÉPIC 5 — Accessibilité
+AB-050 — Audit accessibilité
+
+Objectif
+Identifier les vrais problèmes.
+
+Tâches
+
+Audit clavier
+
+Audit SR
+
+Audit contrastes
+
+Critères
+
+Liste priorisée
+
+🎯 Lead angle : priorisation.
+
+AB-051 — Corrections
+
+Objectif
+Élever le niveau global.
+
+Tâches
+
+Corriger focus
+
+Sémantique
+
+ARIA si nécessaire
+
+Critères
+
+Zéro régression UX
+
+🎯 Lead angle : qualité transverse.
+
+🧩 ÉPIC 6 — Tests & Qualité
+AB-060 — Tests critiques
+
+Objectif
+Sécuriser le cœur métier.
+
+Tâches
+
+Tests dashboard
+
+Tests formulaire
+
+Tests hooks
+
+Critères
+
+Tests utiles
+
+Lisibles
+
+🎯 Lead angle : ROI du test.
+
+AB-061 — Outillage équipe
+
+Objectif
+Maintenabilité long terme.
+
+Tâches
+
+Checklist PR
+
+CONTRIBUTING.md
+
+Critères
+
+Onboarding < 1 jour
+
+🎯 Lead angle : leadership technique.
+
+🧩 ÉPIC 7 — Documentation & Entretien
+AB-070 — Documentation finale
+
+Objectif
+Être prêt à défendre le projet.
+
+Tâches
+
+ADR
+
+Accessibilité
+
+Tests
+
+Perf
+
+Critères
+
+Argumentation claire
+
+🎯 Lead angle : storytelling technique.
+
+🔥 Règle d’or pendant tout le projet
+
+Si tu n’es pas capable d’expliquer une décision en entretien, c’est qu’elle n’est pas prête.
